@@ -3,6 +3,6 @@
 const textDate = document.getElementById("text-date");
 const inputDate = document.getElementById("date");
 
-textDate.textContent = dayjs().format("DD/MM/YYYY");
+textDate.textContent = dayjs().format("MMM DD, YYYY");
 inputDate.min = dayjs().format("YYYY-MM-DD")
-inputDate.onchange = () => textDate.textContent = dayjs(inputDate.value).format("DD/MM/YYYY");
+inputDate.onchange = () => textDate.textContent = dayjs(inputDate.value).format("MMM DD, YYYY");
