@@ -1,0 +1,12 @@
+.button-scheduler {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  min-width: calc(214rem/16);
+  min-height: 3rem;
+  background-color: var(--content-brand);
+  color: #050505;
+  border-radius: .5rem;
+  padding: .75rem 1.5rem;
+  border: none;
+}
