@@ -33,5 +33,17 @@
   --accent-orange-light: #75501b;
 
   /*           fonts           */
-  
+  --font-family: "Inter", system-ui, sans-serif;
+  --ff-title: "Inter tight", system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 700;
+
+  --title: var(--fw-bold) 1.5rem/2rem var(--ff-title);
+  --pg-md: var(--fw-md) calc(14rem/16)/1.5rem var(--font-family);
+  --pg-sm: var(--fw-md) calc(12rem/16)/1rem var(--font-family);
+  --label-lg: var(--fw-bold) 1rem/1.5rem var(--font-family);
+  --label-md: var(--fw-bold) calc(14rem/16)/1.5rem var(--font-family);
+  --label-sm: var(--fw-bold) calc(12rem/16)/1rem var(--font-family);
+  --link: var(--fw-md) calc(12rem/16)/1rem var(--font-family);
 }
