@@ -14,7 +14,7 @@
   --content-tertiary: #666666;
   --content-brand: #9282fa;
 
-  --bg-primary: #151515;
+  --bg-primary: #14151d;
   --bg-secondary: #1e1e1e;
   --bg-tertiary: #23242c;
   --bg-brand: #9282fa;
@@ -46,4 +46,17 @@
   --label-md: var(--fw-bold) calc(14rem/16)/1.5rem var(--font-family);
   --label-sm: var(--fw-bold) calc(12rem/16)/1rem var(--font-family);
   --link: var(--fw-md) calc(12rem/16)/1rem var(--font-family);
+}
+
+body {
+  font-weight: var(--fw-base);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #98959d;
+}
+
+main {
+  width: 100%;
+  height: 100%;
 }

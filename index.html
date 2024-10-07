@@ -10,6 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
 </head>
 <body>
-
+<main>
+  <header class="container">
+    <div>
+      <h1 class="title">Sua agenda</h1>
+      <span class="pg-md">Aqui você pode ver todos os clientes e serviços agendados para hoje.</span>
+    </div>
+    <div>
+      <img src="./src/assets/Calendar.svg" alt="ícone de calendário">
+      <span id="text-date"></span>
+      <div><input type="date" name="date" id="date"></div>
+    </div>
+  </header>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script type="module" src="./src/main.js"></script>
 </body>
 </html>
