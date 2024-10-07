@@ -7,6 +7,11 @@ section {
   border-radius: calc(10rem/16);
 }
 
+.remove:hover {
+  color: var(--content-primary);
+  text-decoration: underline;
+}
+
 section > header {
   display: grid;
   grid-template-columns: 1fr 1fr;
