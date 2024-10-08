@@ -9,6 +9,10 @@
   border: none;
   margin-inline: auto;
   margin-bottom: 2rem;
+
+  &:hover {
+    background-color: var(--bg-highlights);
+  }
 }
 
 aside {
@@ -36,9 +40,9 @@ aside {
 @media (width >= 80em) {
   .button-new-schedule {
     position: absolute;
+    margin-bottom: 0;
     bottom: 2rem;
     right: 2rem;
-    margin-bottom: 0;
   }
 
   .scheduler-button {

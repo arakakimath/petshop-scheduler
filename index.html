@@ -11,7 +11,7 @@
 </head>
 <body>
 <main>
-  <header class="container blur">
+  <header class="container">
     <div>
       <h1 class="title">Your schedule</h1>
       <span class="pg-md">Here you can see all the clients and services scheduled for today. </span>
@@ -22,7 +22,7 @@
       <div><input type="date" name="date" id="date"></div>
     </div>
   </header>
-  <section class="morning container blur">
+  <section class="morning container">
     <header>
       <div>
         <img src="./src/assets/Morning.svg" alt="morning period icon">
@@ -45,7 +45,7 @@
       </li>
     </ul>
   </section>
-  <section class="afternoon container blur">
+  <section class="afternoon container">
     <header>
       <div>
         <img src="./src/assets/Afternoon.svg" alt="afternoon period icon">
@@ -55,7 +55,7 @@
     </header>
     <ul></ul>
   </section>
-  <section class="evening container blur">
+  <section class="evening container">
     <header>
       <div>
         <img src="./src/assets/Evening.svg" alt="evening period icon">
@@ -66,9 +66,9 @@
     <ul></ul>
   </section>
   <img src="./src/assets/Logo.svg" alt="Mundo Pet logo" class="logo">
-  <button class="button-new-schedule label-lg hidden">NEW APPOINTMENT</button>
+  <button class="button-new-schedule label-lg">NEW APPOINTMENT</button>
 
-  <div class="transparent overlay">
+  <div class="transparent overlay hidden">
     <aside>
       <span class="title">Schedule a service</span>
       <span class="pg-md">Fill in the client's information to schedule the appointment.</span>
@@ -113,6 +113,7 @@
         </div>
       </form>
       <button type="submit" class="scheduler-button label-lg">SCHEDULE</button>
+      <div id="remove" class="mobile-only"></div>
     </aside>
   </div>
 </main>

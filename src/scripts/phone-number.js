@@ -2,7 +2,6 @@ const phoneInput = document.getElementById("clientPhone");
 let phoneNumber = "";
 const listOfNumbers = "0123456789";
 
-console.log('teste')
 phoneInput.addEventListener("focus",() => {
   if (!phoneInput.value.includes("+"))
     phoneInput.value = "+";
@@ -12,7 +11,8 @@ phoneInput.addEventListener("focus",() => {
 
 phoneNumber = phoneInput.addEventListener("keydown",(event) => {
   // Previne que o evento adicione teclas no formulário
-  event.preventDefault();
+  if (!(event.key === "Tab"))
+    event.preventDefault();
   if (event.key === 'Backspace' || event.key === 'Delete') {
     phoneInput.value = "+ ";
     phoneNumber = "";
@@ -34,7 +34,6 @@ function validInput(key) {
   else if (listOfNumbers.includes(key)){
     if(!phoneNumber)
       phoneNumber = "+";
-      phoneNumber += key
-      console.log(phoneNumber)
+      phoneNumber += key;
   }
 }

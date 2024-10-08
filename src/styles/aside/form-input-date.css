@@ -14,7 +14,7 @@
       position: absolute;
       inset: 0;
     }
-    background-image: url(../assets/Icon.svg);
+    background-image: url(../../assets/Icon.svg);
     object-fit: contain;
     width: calc(20rem/16);
     height: calc(20rem/16);
