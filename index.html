@@ -66,7 +66,7 @@
     <ul></ul>
   </section>
   <img src="./src/assets/Logo.svg" alt="Mundo Pet logo" class="logo">
-  <button class="button-scheduler label-lg hidden">NEW APPOINTMENT</button>
+  <button class="button-new-schedule label-lg hidden">NEW APPOINTMENT</button>
 
   <div class="transparent overlay">
     <aside>
@@ -76,21 +76,43 @@
         <label for="clientName" class="label-md content-primary">Tutor's name</label>
         <div class="input">
           <img src="./src/assets/User.svg" alt="User icon">
-          <input type="text" name="clientName" id="clientName" placeholder="Salsicha">
+          <input type="text" name="clientName" id="clientName" placeholder="Salsicha" required>
         </div>
 
         <label for="petName" class="label-md content-primary">Tutor's name</label>
         <div class="input">
           <img src="./src/assets/Pet-Paw.svg" alt="petpaw icon">
-          <input type="text" name="petName" id="petName" placeholder="Scooby-doo">
+          <input type="text" name="petName" id="petName" placeholder="Scooby-doo" required>
         </div>
 
         <label for="clientPhone" class="label-md content-primary">Phone number</label>
         <div class="input">
           <img src="./src/assets/Phone.svg" alt="Phone icon">
-          <input type="text" name="clientPhone" id="clientPhone" placeholder="+XX (XX) XXXXX - XXXX">
+          <input type="text" name="clientPhone" id="clientPhone" placeholder="+XX (XX) XXXXX-XXXX">
+        </div>
+
+        <label for="serviceInfo" class="label-md content-primary">Service info</label>
+        <div class="input">
+          <textarea name="serviceInfo" id="serviceInfo" rows="3" placeholder="Banho e Tosa"></textarea>
+        </div>
+
+        <div class="input-date">
+          <label for="date-form" class="label-md content-primary">Date</label>
+          <div class="input">
+            <img src="./src/assets/Calendar.svg" alt="calendar icon">
+            <span id="text-date-form">Oct 07, 2024</span>
+            <div><input type="date" name="date-form" id="date-form"></div>
+          </div>
+
+          <label for="time" class="label-md content-primary">Time</label>
+          <div class="input">
+            <img src="./src/assets/Clock.svg" alt="Clock icon">
+            <span id="text-time-form">23:16</span>
+            <div><input type="time" name="time" id="time"></div>
+          </div>
         </div>
       </form>
+      <button type="submit" class="scheduler-button label-lg">SCHEDULE</button>
     </aside>
   </div>
 </main>

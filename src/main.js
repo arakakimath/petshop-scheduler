@@ -6,7 +6,7 @@
 // CSS
 /*import "./styles/global.css"
 console.log("olá")*/
-import "./styles/header-date.js"
+import "./scripts/header-date.js"
 import "./scripts/phone-number.js"
 
 
