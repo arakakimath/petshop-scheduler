@@ -1,4 +1,4 @@
-//import dayjs from "dayjs"
+import dayjs from "dayjs"
 
 const textDate = document.getElementById("text-date");
 const inputDate = document.getElementById("date");
