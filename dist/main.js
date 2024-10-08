@@ -9,6 +9,69 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_main_page_layout_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main/page-layout.css */ \"./src/styles/main/page-layout.css\");\n/* harmony import */ var _styles_main_header_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main/header.css */ \"./src/styles/main/header.css\");\n/* harmony import */ var _styles_main_sections_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main/sections.css */ \"./src/styles/main/sections.css\");\n/* harmony import */ var _styles_buttons_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/buttons.css */ \"./src/styles/buttons.css\");\n/* harmony import */ var _styles_main_logo_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/main/logo.css */ \"./src/styles/main/logo.css\");\n/* harmony import */ var _styles_aside_aside_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/aside/aside.css */ \"./src/styles/aside/aside.css\");\n/* harmony import */ var _styles_aside_form_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/aside/form.css */ \"./src/styles/aside/form.css\");\n/* harmony import */ var _styles_aside_textarea_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./styles/aside/textarea.css */ \"./src/styles/aside/textarea.css\");\n/* harmony import */ var _styles_aside_form_input_date_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./styles/aside/form-input-date.css */ \"./src/styles/aside/form-input-date.css\");\n/* harmony import */ var _styles_utility_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./styles/utility.css */ \"./src/styles/utility.css\");\n/* harmony import */ var _scripts_form_header_date_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./scripts/form/header-date.js */ \"./src/scripts/form/header-date.js\");\n/* harmony import */ var _scripts_form_header_date_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_scripts_form_header_date_js__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _scripts_form_phone_number_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./scripts/form/phone-number.js */ \"./src/scripts/form/phone-number.js\");\n/* harmony import */ var _scripts_form_phone_number_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_scripts_form_phone_number_js__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var _scripts_buttons_button_new_schedule_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./scripts/buttons/button-new-schedule.js */ \"./src/scripts/buttons/button-new-schedule.js\");\n/* harmony import */ var _scripts_buttons_cancel_scheduling_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./scripts/buttons/cancel-scheduling.js */ \"./src/scripts/buttons/cancel-scheduling.js\");\n/* harmony import */ var _scripts_buttons_cancel_scheduling_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_scripts_buttons_cancel_scheduling_js__WEBPACK_IMPORTED_MODULE_14__);\n/* harmony import */ var _scripts_form_date_time_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./scripts/form/date-time.js */ \"./src/scripts/form/date-time.js\");\n\n\n// CSS\n\n\n\n\n\n\n\n\n\n\n\n\n// JS\n\n\n\n\n\n\n//# sourceURL=webpack://Petshop_scheduler/./src/main.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/buttons/button-new-schedule.js":
+/*!****************************************************!*\
+  !*** ./src/scripts/buttons/button-new-schedule.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _form_date_time_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../form/date-time.js */ \"./src/scripts/form/date-time.js\");\n\nvar button = document.querySelector(\".button-new-schedule\");\nvar header = document.querySelector(\"main > header\");\nvar sectionMorning = document.querySelector(\".morning\");\nvar sectionAfternoon = document.querySelector(\".afternoon\");\nvar sectionEvening = document.querySelector(\".evening\");\nvar divOverlay = document.querySelector(\".overlay\");\nvar main = document.querySelector(\"main\");\nbutton.addEventListener(\"click\", function () {\n  header.classList.add(\"blur\");\n  sectionMorning.classList.add(\"blur\");\n  sectionAfternoon.classList.add(\"blur\");\n  sectionEvening.classList.add(\"blur\");\n  button.classList.add(\"hidden\");\n  divOverlay.classList.remove(\"hidden\");\n  main.classList.add(\"main-size\");\n  (0,_form_date_time_js__WEBPACK_IMPORTED_MODULE_0__.formInputRefresher)();\n});\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/buttons/button-new-schedule.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/buttons/cancel-scheduling.js":
+/*!**************************************************!*\
+  !*** ./src/scripts/buttons/cancel-scheduling.js ***!
+  \**************************************************/
+/***/ (() => {
+
+eval("var button = document.querySelector(\".button-new-schedule\");\nvar header = document.querySelector(\"main > header\");\nvar sectionMorning = document.querySelector(\".morning\");\nvar sectionAfternoon = document.querySelector(\".afternoon\");\nvar sectionEvening = document.querySelector(\".evening\");\nvar divOverlay = document.querySelector(\".overlay\");\nvar main = document.querySelector(\"main\");\ndivOverlay.addEventListener(\"click\", function (event) {\n  if (event.target.classList.contains(\"overlay\") || event.target.classList.contains(\"mobile-only\")) {\n    header.classList.remove(\"blur\");\n    sectionMorning.classList.remove(\"blur\");\n    sectionAfternoon.classList.remove(\"blur\");\n    sectionEvening.classList.remove(\"blur\");\n    button.classList.remove(\"hidden\");\n    divOverlay.classList.add(\"hidden\");\n    main.classList.remove(\"main-size\");\n  }\n});\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/buttons/cancel-scheduling.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/form/date-time.js":
+/*!***************************************!*\
+  !*** ./src/scripts/form/date-time.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   formInputRefresher: () => (/* binding */ formInputRefresher)\n/* harmony export */ });\nvar dateTimeSpan = document.querySelectorAll(\".input-date span\");\nvar dateInput = document.getElementById(\"date-form\");\nvar timeInput = document.getElementById(\"time\");\nfunction formInputRefresher() {\n  dateTimeSpan[0].textContent = dayjs().format(\"MMM DD, YYYY\");\n  dateTimeSpan[1].textContent = dayjs().format(\"HH:mm\");\n  dateInput.min = dayjs().format(\"YYYY-MM-DD\");\n}\ndateInput.onchange = function () {\n  dateTimeSpan[0].textContent = dayjs(dateInput.value).format(\"MMM DD, YYYY\");\n};\ntimeInput.onchange = function () {\n  dateTimeSpan[1].textContent = dayjs().hour(timeInput.value.split(\":\")[0]).minute(timeInput.value.split(\":\")[1]).format(\"HH:mm\");\n};\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/form/date-time.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/form/header-date.js":
+/*!*****************************************!*\
+  !*** ./src/scripts/form/header-date.js ***!
+  \*****************************************/
+/***/ (() => {
+
+eval("//import dayjs from \"dayjs\"\n\nvar textDate = document.getElementById(\"text-date\");\nvar inputDate = document.getElementById(\"date\");\ntextDate.textContent = dayjs().format(\"MMM DD, YYYY\");\ninputDate.min = dayjs().format(\"YYYY-MM-DD\");\ninputDate.onchange = function () {\n  return textDate.textContent = dayjs(inputDate.value).format(\"MMM DD, YYYY\");\n};\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/form/header-date.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/form/phone-number.js":
+/*!******************************************!*\
+  !*** ./src/scripts/form/phone-number.js ***!
+  \******************************************/
+/***/ (() => {
+
+eval("var phoneInput = document.getElementById(\"clientPhone\");\nvar phoneNumber = \"\";\nvar listOfNumbers = \" 0123456789\";\nvar listOfCaracteres = \"+()-\";\nphoneInput.addEventListener(\"focus\", function () {\n  if (!phoneInput.value.includes(\"+\")) phoneInput.value = \"+\";\n});\nphoneInput.addEventListener(\"input\", function () {\n  if (!phoneInput.value.includes(\"+\")) phoneInput.value = \"+\";\n  if (!listOfNumbers.includes(phoneInput.value[phoneInput.value.length - 1])) {\n    if (listOfCaracteres.includes(phoneInput.value[phoneInput.value.length - 1])) {\n      if (Verify()) phoneInput.value = phoneInput.value.slice(0, -1);\n    } else phoneInput.value = phoneInput.value.slice(0, -1);\n  }\n  function Verify() {\n    var contain = false;\n    if (phoneInput.value.slice(0, -1).includes(phoneInput.value[phoneInput.value.length - 1])) contain = true;\n    return contain;\n  }\n  if (phoneInput.value[phoneInput.value.length - 1] === \" \") {\n    if (!phoneInput.value.includes(\"(\")) phoneInput.value += \"(\";else if (!phoneInput.value.includes(\")\")) {\n      phoneInput.value = phoneInput.value.slice(0, -1);\n      phoneInput.value += \") \";\n    } else if (!phoneInput.value.includes(\"-\") && listOfNumbers.includes(phoneInput.value[phoneInput.value.length - 2])) {\n      phoneInput.value = phoneInput.value.slice(0, -1);\n      phoneInput.value += \"-\";\n    }\n  }\n});\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/form/phone-number.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/aside/aside.css":
 /*!**************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/aside/aside.css ***!
@@ -347,69 +410,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 "use strict";
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://Petshop_scheduler/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/global.css */ \"./src/styles/global.css\");\n/* harmony import */ var _styles_main_page_layout_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main/page-layout.css */ \"./src/styles/main/page-layout.css\");\n/* harmony import */ var _styles_main_header_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main/header.css */ \"./src/styles/main/header.css\");\n/* harmony import */ var _styles_main_sections_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main/sections.css */ \"./src/styles/main/sections.css\");\n/* harmony import */ var _styles_buttons_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/buttons.css */ \"./src/styles/buttons.css\");\n/* harmony import */ var _styles_main_logo_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/main/logo.css */ \"./src/styles/main/logo.css\");\n/* harmony import */ var _styles_aside_aside_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/aside/aside.css */ \"./src/styles/aside/aside.css\");\n/* harmony import */ var _styles_aside_form_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/aside/form.css */ \"./src/styles/aside/form.css\");\n/* harmony import */ var _styles_aside_textarea_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./styles/aside/textarea.css */ \"./src/styles/aside/textarea.css\");\n/* harmony import */ var _styles_aside_form_input_date_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./styles/aside/form-input-date.css */ \"./src/styles/aside/form-input-date.css\");\n/* harmony import */ var _styles_utility_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./styles/utility.css */ \"./src/styles/utility.css\");\n/* harmony import */ var _scripts_form_header_date_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./scripts/form/header-date.js */ \"./src/scripts/form/header-date.js\");\n/* harmony import */ var _scripts_form_header_date_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_scripts_form_header_date_js__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _scripts_form_phone_number_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./scripts/form/phone-number.js */ \"./src/scripts/form/phone-number.js\");\n/* harmony import */ var _scripts_form_phone_number_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_scripts_form_phone_number_js__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var _scripts_buttons_button_new_schedule_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./scripts/buttons/button-new-schedule.js */ \"./src/scripts/buttons/button-new-schedule.js\");\n/* harmony import */ var _scripts_buttons_cancel_scheduling_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./scripts/buttons/cancel-scheduling.js */ \"./src/scripts/buttons/cancel-scheduling.js\");\n/* harmony import */ var _scripts_buttons_cancel_scheduling_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_scripts_buttons_cancel_scheduling_js__WEBPACK_IMPORTED_MODULE_14__);\n/* harmony import */ var _scripts_form_date_time_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./scripts/form/date-time.js */ \"./src/scripts/form/date-time.js\");\n\r\n\r\n// CSS\r\n;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n// JS\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://Petshop_scheduler/./src/main.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/buttons/button-new-schedule.js":
-/*!****************************************************!*\
-  !*** ./src/scripts/buttons/button-new-schedule.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _form_date_time_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../form/date-time.js */ \"./src/scripts/form/date-time.js\");\n\r\n\r\nconst button = document.querySelector(\".button-new-schedule\");\r\nconst header = document.querySelector(\"main > header\")\r\nconst sectionMorning = document.querySelector(\".morning\");\r\nconst sectionAfternoon = document.querySelector(\".afternoon\");\r\nconst sectionEvening = document.querySelector(\".evening\");\r\nconst divOverlay = document.querySelector(\".overlay\");\r\nconst main = document.querySelector(\"main\");\r\n\r\nbutton.addEventListener(\"click\", () => {\r\n  header.classList.add(\"blur\");\r\n  sectionMorning.classList.add(\"blur\");\r\n  sectionAfternoon.classList.add(\"blur\");\r\n  sectionEvening.classList.add(\"blur\");\r\n  button.classList.add(\"hidden\");\r\n  divOverlay.classList.remove(\"hidden\");\r\n  main.classList.add(\"main-size\");\r\n\r\n  (0,_form_date_time_js__WEBPACK_IMPORTED_MODULE_0__.formInputRefresher)();\r\n})\r\n\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/buttons/button-new-schedule.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/buttons/cancel-scheduling.js":
-/*!**************************************************!*\
-  !*** ./src/scripts/buttons/cancel-scheduling.js ***!
-  \**************************************************/
-/***/ (() => {
-
-eval("const button = document.querySelector(\".button-new-schedule\");\r\nconst header = document.querySelector(\"main > header\")\r\nconst sectionMorning = document.querySelector(\".morning\");\r\nconst sectionAfternoon = document.querySelector(\".afternoon\");\r\nconst sectionEvening = document.querySelector(\".evening\");\r\nconst divOverlay = document.querySelector(\".overlay\");\r\nconst main = document.querySelector(\"main\");\r\n\r\ndivOverlay.addEventListener(\"click\", (event) => {\r\n  if(event.target.classList.contains(\"overlay\") || event.target.classList.contains(\"mobile-only\")) {\r\n    header.classList.remove(\"blur\");\r\n    sectionMorning.classList.remove(\"blur\");\r\n    sectionAfternoon.classList.remove(\"blur\");\r\n    sectionEvening.classList.remove(\"blur\");\r\n    button.classList.remove(\"hidden\");\r\n    divOverlay.classList.add(\"hidden\");\r\n    main.classList.remove(\"main-size\");\r\n  }\r\n})\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/buttons/cancel-scheduling.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/form/date-time.js":
-/*!***************************************!*\
-  !*** ./src/scripts/form/date-time.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   formInputRefresher: () => (/* binding */ formInputRefresher)\n/* harmony export */ });\nconst dateTimeSpan = document.querySelectorAll(\".input-date span\");\r\nconst dateInput = document.getElementById(\"date-form\");\r\nconst timeInput = document.getElementById(\"time\");\r\n\r\nfunction formInputRefresher() {\r\n  dateTimeSpan[0].textContent = dayjs().format(\"MMM DD, YYYY\")\r\n  dateTimeSpan[1].textContent = dayjs().format(\"HH:mm\")\r\n  dateInput.min = dayjs().format(\"YYYY-MM-DD\");\r\n}\r\n\r\ndateInput.onchange = () => {\r\n  dateTimeSpan[0].textContent = dayjs(dateInput.value).format(\"MMM DD, YYYY\")\r\n}\r\n\r\ntimeInput.onchange = () => {\r\n  dateTimeSpan[1].textContent = dayjs().hour(timeInput.value.split(\":\")[0]).minute(timeInput.value.split(\":\")[1]).format(\"HH:mm\")\r\n}\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/form/date-time.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/form/header-date.js":
-/*!*****************************************!*\
-  !*** ./src/scripts/form/header-date.js ***!
-  \*****************************************/
-/***/ (() => {
-
-eval("//import dayjs from \"dayjs\"\r\n\r\nconst textDate = document.getElementById(\"text-date\");\r\nconst inputDate = document.getElementById(\"date\");\r\n\r\ntextDate.textContent = dayjs().format(\"MMM DD, YYYY\");\r\ninputDate.min = dayjs().format(\"YYYY-MM-DD\")\r\ninputDate.onchange = () => textDate.textContent = dayjs(inputDate.value).format(\"MMM DD, YYYY\");\r\n\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/form/header-date.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/form/phone-number.js":
-/*!******************************************!*\
-  !*** ./src/scripts/form/phone-number.js ***!
-  \******************************************/
-/***/ (() => {
-
-eval("const phoneInput = document.getElementById(\"clientPhone\");\r\nlet phoneNumber = \"\";\r\nconst listOfNumbers = \" 0123456789\";\r\nconst listOfCaracteres = \"+()-\"\r\n\r\nphoneInput.addEventListener(\"focus\",() => {\r\n  if (!phoneInput.value.includes(\"+\"))\r\n    phoneInput.value = \"+\";\r\n})\r\n\r\nphoneInput.addEventListener(\"input\", () => {\r\n  if (!phoneInput.value.includes(\"+\"))\r\n    phoneInput.value = \"+\";\r\n\r\n  if (!listOfNumbers.includes(phoneInput.value[phoneInput.value.length - 1])) {\r\n    if (listOfCaracteres.includes(phoneInput.value[phoneInput.value.length-1])){\r\n      if (Verify())\r\n        phoneInput.value = phoneInput.value.slice(0,-1)\r\n    }\r\n    else\r\n      phoneInput.value = phoneInput.value.slice(0,-1)\r\n  }\r\n  function Verify() {\r\n    let contain = false\r\n    if (phoneInput.value.slice(0,-1).includes(phoneInput.value[phoneInput.value.length-1]))\r\n      contain = true\r\n    return contain\r\n  }\r\n\r\n  if (phoneInput.value[phoneInput.value.length - 1] === \" \") {\r\n    if (!phoneInput.value.includes(\"(\"))\r\n      phoneInput.value += \"(\"\r\n    else if (!phoneInput.value.includes(\")\")) {\r\n      phoneInput.value = phoneInput.value.slice(0,-1)\r\n      phoneInput.value += \") \"\r\n    }\r\n    else if (!phoneInput.value.includes(\"-\") && listOfNumbers.includes(phoneInput.value[phoneInput.value.length - 2])) {\r\n      phoneInput.value = phoneInput.value.slice(0,-1)\r\n      phoneInput.value += \"-\"\r\n    }\r\n  }\r\n})\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/form/phone-number.js?");
 
 /***/ }),
 
