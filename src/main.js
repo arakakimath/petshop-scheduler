@@ -1,5 +1,8 @@
 "use strict"
 
+// DayJS Setup
+import "./scripts/libs/dayjs.js"
+
 // CSS
 import "./styles/global.css"
 import "./styles/main/page-layout.css"
