@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petshop Scheduler</title>
+  <link rel="stylesheet" href="./src/styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
+<script defer src="main.js"></script></head>
+<body>
+<main>
+  <header class="container">
+    <div>
+      <h1 class="title">Your schedule</h1>
+      <span class="pg-md">Here you can see all the clients and services scheduled for today. </span>
+    </div>
+    <div>
+      <img src="./src/assets/Calendar.svg" alt="calendar icon">
+      <span id="text-date"></span>
+      <div><input type="date" name="date" id="date"></div>
+    </div>
+  </header>
+  <section class="morning container">
+    <header>
+      <div>
+        <img src="./src/assets/Morning.svg" alt="morning period icon">
+        <span class="label-lg content-primary">Morning</span>
+      </div>
+      <span class="label-lg">09h-12h</span>
+    </header>
+    <ul>
+      <li>
+        <span class="label-md content-primary">09:00</span>
+        <span class="pg-md"><strong class="label-md content-primary">Bella</strong> / Pedro Martins</span>
+        <span class="pg-md">Aplicação de Anti-pulgas</span>
+        <span class="remove pg-md content-tertiary">Remove schedule</span>
+      </li>
+      <li>
+        <span class="label-md content-primary">10:00</span>
+        <span class="pg-md"><strong class="label-md content-primary">Mel</strong> / João Souza</span>
+        <span class="pg-md">Corte de Unhas</span>
+        <span class="remove pg-md content-tertiary">Remove schedule</span>
+      </li>
+    </ul>
+  </section>
+  <section class="afternoon container">
+    <header>
+      <div>
+        <img src="./src/assets/Afternoon.svg" alt="afternoon period icon">
+        <span class="label-lg content-primary">Morning</span>
+      </div>
+      <span class="label-lg">13h-17h</span>
+    </header>
+    <ul></ul>
+  </section>
+  <section class="evening container">
+    <header>
+      <div>
+        <img src="./src/assets/Evening.svg" alt="evening period icon">
+        <span class="label-lg content-primary">Evening</span>
+      </div>
+      <span class="label-lg">18h-21h</span>
+    </header>
+    <ul></ul>
+  </section>
+  <img src="./src/assets/Logo.svg" alt="Mundo Pet logo" class="logo">
+  <button class="button-new-schedule label-lg">NEW APPOINTMENT</button>
+
+  <div class="transparent overlay hidden">
+    <aside>
+      <span class="title">Schedule a service</span>
+      <span class="pg-md">Fill in the client's information to schedule the appointment.</span>
+      <form>
+        <label for="clientName" class="label-md content-primary">Tutor's name</label>
+        <div class="input">
+          <img src="./src/assets/User.svg" alt="User icon">
+          <input type="text" name="clientName" id="clientName" placeholder="Salsicha" required>
+        </div>
+
+        <label for="petName" class="label-md content-primary">Tutor's name</label>
+        <div class="input">
+          <img src="./src/assets/Pet-Paw.svg" alt="petpaw icon">
+          <input type="text" name="petName" id="petName" placeholder="Scooby-doo" required>
+        </div>
+
+        <label for="clientPhone" class="label-md content-primary">Phone number</label>
+        <div class="input">
+          <img src="./src/assets/Phone.svg" alt="Phone icon">
+          <input type="text" name="clientPhone" id="clientPhone" placeholder="+XX (XX) XXXXX-XXXX">
+        </div>
+
+        <label for="serviceInfo" class="label-md content-primary">Service info</label>
+        <div class="input">
+          <textarea name="serviceInfo" id="serviceInfo" rows="3" placeholder="Banho e Tosa"></textarea>
+        </div>
+
+        <div class="input-date">
+          <label for="date-form" class="label-md content-primary">Date</label>
+          <div class="input">
+            <img src="./src/assets/Calendar.svg" alt="calendar icon">
+            <span id="text-date-form">Oct 07, 2024</span>
+            <div><input type="date" name="date-form" id="date-form"></div>
+          </div>
+
+          <label for="time" class="label-md content-primary">Time</label>
+          <div class="input">
+            <img src="./src/assets/Clock.svg" alt="Clock icon">
+            <span id="text-time-form">23:16</span>
+            <div><input type="time" name="time" id="time"></div>
+          </div>
+        </div>
+      </form>
+      <button type="submit" class="scheduler-button label-lg">SCHEDULE</button>
+      <div id="remove" class="mobile-only"></div>
+    </aside>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
