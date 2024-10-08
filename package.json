@@ -1,8 +1,18 @@
 {
+  "name": "Petshop Scheduler",
+  "description": "Website for organizing petshop schedules",
+  "author": "Matheus Arakaki",
+  "course": "Rocketseat Fullstack",
+  "subject": "Javascript before framework",
   "scripts": {
-    "server": "json-server --watch server.json --port 3333"
+    "server": "json-server --watch server.json --port 3333",
+    "build": "webpack"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   }
 }
