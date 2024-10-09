@@ -1,3 +1,40 @@
 {
-  "schedules": []
+  "schedules": [
+    {
+      "id": "241009003945358",
+      "name": "Matheus",
+      "pet": "Mavis",
+      "phone": "+55 (00) 99999-9999",
+      "service": "Corte de unha e vermífugo",
+      "date": "2024-10-09",
+      "time": "22:00"
+    },
+    {
+      "id": "241009004414148",
+      "name": "Matheus",
+      "pet": "Mavis",
+      "phone": "+55 (00) 99999-9999",
+      "service": "Corte de unha e vermífugo",
+      "date": "2024-10-10",
+      "time": "15:00"
+    },
+    {
+      "id": "241009004722722",
+      "name": "Rapha",
+      "pet": "Kira",
+      "phone": "+55 (00) 99999-9999",
+      "service": "Vermifugar",
+      "date": "2024-10-12",
+      "time": "08:45"
+    },
+    {
+      "id": "241009004834887",
+      "name": "Bento",
+      "pet": "Rex",
+      "phone": "+55 (00) 99999-9999",
+      "service": "Banho",
+      "date": "2024-10-12",
+      "time": "09:00"
+    }
+  ]
 }

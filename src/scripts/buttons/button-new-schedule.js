@@ -9,6 +9,12 @@ const divOverlay = document.querySelector(".overlay");
 const main = document.querySelector("main");
 
 button.addEventListener("click", () => {
+  openForm();
+
+  formInputRefresher();
+})
+
+export function openForm() {
   header.classList.add("blur");
   sectionMorning.classList.add("blur");
   sectionAfternoon.classList.add("blur");
@@ -16,6 +22,4 @@ button.addEventListener("click", () => {
   button.classList.add("hidden");
   divOverlay.classList.remove("hidden");
   main.classList.add("main-size");
-
-  formInputRefresher();
-})
+}
