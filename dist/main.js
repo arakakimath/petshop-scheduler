@@ -202,7 +202,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   apiConfig: () => (/* binding */ apiConfig)\n/* harmony export */ });\nvar apiConfig = {\n  baseUrl: \"http://localhost:3333\"\n};\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/services/api-config.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   apiConfig: () => (/* binding */ apiConfig)\n/* harmony export */ });\nvar apiConfig = {\n  baseUrl: \"https://petshop-api-6a73.onrender.com\"\n};\n\n//# sourceURL=webpack://Petshop_scheduler/./src/scripts/services/api-config.js?");
 
 /***/ }),
 
