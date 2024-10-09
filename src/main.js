@@ -17,11 +17,13 @@ import "./styles/aside/form-input-date.css"
 import "./styles/utility.css"
 
 // JS
-import "./scripts/form/header-date.js"
+import "./scripts/load/header-date.js"
 import "./scripts/form/phone-number.js"
 import "./scripts/buttons/button-new-schedule.js"
 import "./scripts/buttons/cancel-scheduling.js"
 import "./scripts/form/date-time.js"
 import "./scripts/form/getting-data.js"
+import "./scripts/load/page-load.js"
+import "./scripts/scheduling/schedule-click.js"
 
 

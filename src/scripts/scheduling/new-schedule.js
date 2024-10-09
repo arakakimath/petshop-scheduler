@@ -1,6 +1,15 @@
 import { apiConfig } from "../services/api-config";
+import { daySchedules } from "../load/load-schedules";
+import { closeForm } from "../buttons/cancel-scheduling";
 
-export async function newSchedule({ id, name, date, service, pet, phone}) {
+const clientName = document.querySelector("#clientName")
+const petName = document.querySelector("#petName")
+const clientPhone = document.querySelector("#clientPhone")
+const serviceInfo = document.querySelector("#serviceInfo")
+const dateForm = document.querySelector("#date-form")
+const timeForm = document.querySelector("#time")
+
+export async function newSchedule({ id, name, date, service, pet, phone, time}) {
   try {
     const response = await fetch(
       `${apiConfig.baseUrl}/schedules`,
@@ -9,13 +18,26 @@ export async function newSchedule({ id, name, date, service, pet, phone}) {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ id, name, pet, phone, service, date })
+        body: JSON.stringify({ id, name, pet, phone, service, date, time })
       }
     )
 
-    console.log(response.ok)
+    await daySchedules()
+
+    clientName.value  = ""
+    petName.value     = ""
+    clientPhone.value = ""
+    serviceInfo.value = ""
+    dateForm.value    = ""
+    timeForm.value    = ""
+
+    closeForm()
+
+    if(response.ok)
+      alert("Appointment successfully scheduled!")
+
   } catch (error) {
     console.log(error)
-    alert("It wasn't possible to make the schedule. Try again later")
+    alert("It wasn't possible to schedule the appointment. Try again later")
   }
 }
